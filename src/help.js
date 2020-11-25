@@ -1,5 +1,6 @@
 import chalk from 'chalk';
-import data from '../data/timezones'
+import data from '../data/timezones';
+import { timeByTimeZone } from '../services/timeByTimeZone';
 
 const helpMenus = {
   main: `
@@ -14,5 +15,8 @@ const helpMenus = {
 
 export async function help() {
   console.log(helpMenus.main);
-  console.log(data.timezones[0])
+  // Available Timezones
+  // console.log(data.timezones[0])
+  // Sample GET TIME Request
+  // timeByTimeZone("America/Argentina/Salta")
 }
