@@ -1,0 +1,20 @@
+{
+  "name": "logixboard",
+  "version": "1.0.0",
+  "description": "Assessment for Logixboard",
+  "main": "index.js",
+  "bin": {
+    "jarvis": "../src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dipen Patel",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "minimist": "^1.2.5"
+  }
+}
