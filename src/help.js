@@ -15,8 +15,4 @@ const helpMenus = {
 
 export async function help() {
   console.log(helpMenus.main);
-  // Available Timezones
-  // console.log(data.timezones[0])
-  // Sample GET TIME Request
-  // timeByTimeZone("America/Argentina/Salta")
 }
