@@ -6,5 +6,5 @@ export function parseDateTime(datetime) {
                     + currentDateTime.getFullYear() + " "
                     + currentDateTime.getHours() + ":"
                     + currentDateTime.getMinutes();
-    console.log(currentDateTime);
+    return currentDateTime;
 }
