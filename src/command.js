@@ -13,16 +13,14 @@ export async function command(args) {
   switch (parseCommand(message[0])) {
     case '!timeat':
       let timezone = parseCommand(message[1]);
-      if (data.timezones.includes(timezone)) {
-        // valid timezone, we now call Time Api and get current time in this timezone
+      if (data.timezones.includes(timezone.toLowerCase())) {
+        // valid timezone, we now call Time API and get current time in this timezone
         let response = await timeByTimeZone(timezone);
         let utc_time = response.utc_datetime;
         parseDateTime(utc_time);
-
       } else {
         console.log("unknown timezone");
       }
-      // console.log("Timezone = " + timezone);
       break;
     case '!timepopularity':
       console.log("Time Popularity Called");
@@ -32,6 +30,4 @@ export async function command(args) {
       console.log("Not to Respond");
       break;
   }
-
-  // console.log("Message to the Bot is " + "< " + message + " >");
 }
