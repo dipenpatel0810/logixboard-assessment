@@ -17,6 +17,7 @@ export function whatIsTheTime(args) {
 
         default:
             command(cmd);
+            console.log("----")
             break;
     }
 }
